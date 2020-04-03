@@ -17,6 +17,7 @@ const maxSubArray_Naive = nums => {
     return maxSum;
 };
 
+// Author - https://leetcode.com/gvenezia
 const maxSubArray_DnC = (nums) => {
     // Return the results of the recursive function
     return findMaxSumInArr(nums);
@@ -80,6 +81,7 @@ const maxSubArray_DnC = (nums) => {
     }
 }
 
+// Author - https://leetcode.com/acassara/
 const maxSubArray_DP = (nums) => {
     for (let i = 1; i < nums.length; i++) {
         nums[i] = Math.max(nums[i], nums[i] + nums[i - 1]);
