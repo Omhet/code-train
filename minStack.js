@@ -26,5 +26,7 @@ st.push(2);
 console.log(st)
 st.push(1);
 console.log(st)
+st.push(0);
+console.log(st)
 st.pop();
 console.log(st)
